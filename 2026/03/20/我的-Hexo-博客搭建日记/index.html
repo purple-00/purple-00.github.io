@@ -13,7 +13,7 @@
 
 
 
-<title>Hello World | purple&amp;0&#39;s Blog</title>
+<title>我的 Hexo 博客搭建日记 | purple&amp;0&#39;s Blog</title>
 
 
 
@@ -203,7 +203,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Hello World</h1>
+            <h1 class="post-title">我的 Hexo 博客搭建日记</h1>
             
                 <div class="post-meta">
                     
@@ -212,28 +212,59 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">三月 17, 2026&nbsp;&nbsp;17:05:05</a>
+                        Date: <a href="#">三月 20, 2026&nbsp;&nbsp;16:30:00</a>
                         </span>
                     
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a>
+                            
+                        </span>
                     
                 </div>
             
         </header>
 
         <div class="post-content">
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+            <h2 id="一、缘起"><a href="#一、缘起" class="headerlink" title="一、缘起"></a>一、缘起</h2><p>作为计算机专业的大一新生，一直想自己做一个与计算机专业有关的作品。学院的实验室扩招计划是我的博客诞生的一个契机，于是我开始了解 Hexo + GitHub Pages 并以此来搭建我的个人博客，动手打造自己的技术博客。</p>
+<h2 id="二、核心步骤"><a href="#二、核心步骤" class="headerlink" title="二、核心步骤"></a>二、核心步骤</h2><h3 id="1-环境准备"><a href="#1-环境准备" class="headerlink" title="1. 环境准备"></a>1. 环境准备</h3><ul>
+<li>安装 Node.js 和 Git，为 Hexo 运行提供基础环境</li>
+<li>全局安装 Hexo 脚手架：<code>npm install -g hexo-cli</code></li>
+<li>初始化博客项目：<code>hexo init purple-blog</code></li>
+</ul>
+<h3 id="2-主题与配置"><a href="#2-主题与配置" class="headerlink" title="2. 主题与配置"></a>2. 主题与配置</h3><ul>
+<li>选用 Chic 主题，替换默认主题，让界面更简洁优雅</li>
+<li>修改 <code>_config.yml</code> 配置网站信息：<ul>
+<li>标题：<code>purple&amp;0&#39;s Blog</code></li>
+<li>语言：<code>zh-CN</code></li>
+<li>作者：<code>purple&amp;0</code></li>
+</ul>
+</li>
+<li>配置 GitHub 部署，实现一键推送上线</li>
+</ul>
+<h3 id="3-功能与美化"><a href="#3-功能与美化" class="headerlink" title="3. 功能与美化"></a>3. 功能与美化</h3><ul>
+<li><strong>Favicon 替换</strong>：将 Hello Kitty 图标设为网站图标，解决浏览器缓存问题</li>
+<li><strong>分类与标签</strong>：创建 <code>category</code> 和 <code>tag</code> 页面，实现文章分类管理</li>
+<li><strong>特效添加</strong>：深色模式为雪花飘落，浅色模式为蜘蛛网缠绕，实现雪花飘落和蜘蛛网连线动画，让页面更生动，富有科技感</li>
+</ul>
+<h3 id="4-部署上线"><a href="#4-部署上线" class="headerlink" title="4. 部署上线"></a>4. 部署上线</h3><p>执行 <code>hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</code>，将博客推送到 GitHub Pages，正式上线！</p>
+<h2 id="三、踩坑与收获"><a href="#三、踩坑与收获" class="headerlink" title="三、踩坑与收获"></a>三、踩坑与收获</h2><ul>
+<li><strong>Favicon 不更新</strong>：浏览器强缓存导致旧图标残留，通过覆盖 <code>public</code> 文件 + 无痕模式验证解决</li>
+<li><strong>代码乱码</strong>：粘贴 JS 特效时带入不可见字符，通过重写整行代码修复语法错误</li>
+<li><strong>部署问题</strong>：从 HTTPS 改为 SSH 连接 GitHub，解决部署失败问题</li>
+</ul>
+<p>通过这次搭建，我掌握了 Hexo 博客的完整流程，理解了前端资源引入、浏览器缓存等基础概念，也体会到了「写代码 → 踩坑 → 调试 → 解决」的完整开发体验。</p>
+<h2 id="四、未来规划"><a href="#四、未来规划" class="headerlink" title="四、未来规划"></a>四、未来规划</h2><ul>
+<li>持续更新技术文章，记录计算机专业学习历程</li>
+<li>优化博客样式，添加更多个性化功能</li>
+<li>探索更多前端特效，让博客更有趣</li>
+<li>接入评论系统，与读者互动交流</li>
+</ul>
+<blockquote>
+<p>这是我的第一篇博客，也是技术成长的起点。愿这个小站能成为我记录思考、分享知识的港湾 ✨</p>
+</blockquote>
 
         </div>
 
@@ -248,7 +279,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://example.com/2026/03/17/hello-world/">http://example.com/2026/03/17/hello-world/</a></span>
+                        <span><a href="http://example.com/2026/03/20/%E6%88%91%E7%9A%84-Hexo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0/">http://example.com/2026/03/20/%E6%88%91%E7%9A%84-Hexo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0/</a></span>
                     </p>
                 
                 
@@ -271,6 +302,16 @@
                 <span>Tag(s):</span>
                 <span class="tag">
                     
+                    
+                        <a href="/tags/Hexo/"># Hexo</a>
+                    
+                        <a href="/tags/GitHub-Pages/"># GitHub Pages</a>
+                    
+                        <a href="/tags/%E5%89%8D%E7%AB%AF/"># 前端</a>
+                    
+                        <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"># 个人网站</a>
+                    
+                        
                 </span>
             </div>
             <div>
@@ -281,8 +322,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2026/03/20/%E6%88%91%E7%9A%84-Hexo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%97%A5%E8%AE%B0/">我的 Hexo 博客搭建日记</a>
             
+            <a class="next" rel="next" href="/2026/03/17/hello-world/">Hello World</a>
             
         </section>
 
